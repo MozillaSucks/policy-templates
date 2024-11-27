@@ -1,6 +1,4 @@
-**IMPORTANT**: These files are in active development along with the policies in Firefox. To get the policy information that corresponds to a specific release, go to https://github.com/mozilla/policy-templates/releases.
-
-Starting with Firefox 64 and Firefox ESR 60.4, Firefox supports configuration files on macOS.
+**IMPORTANT**: To use enterprise policies on macOS, you must set the `EnterprisePoliciesEnabled` policy.
 
 An example plist file with all options is available here:
 
@@ -33,4 +31,9 @@ sudo defaults write /Library/Preferences/org.mozilla.firefox Homepage__URL -stri
 Before any command line policies will work, you need to enable policies like this:
 ```bash
 sudo defaults write /Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
+```
+If you want to set user specific policies, use ~/Library without sudo:
+```bash
+defaults write ~/Library/Preferences/org.mozilla.firefox EnterprisePoliciesEnabled -bool TRUE
+defaults write ~/Library/Preferences/org.mozilla.firefox Homepage__URL -string "http://example.com"
 ```
