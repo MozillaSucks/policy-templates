@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<policyDefinitionResources revision="3.4" schemaVersion="1.0" >
+<policyDefinitionResources revision="6.6" schemaVersion="1.0">
   <displayName/>
   <description/>
-  <resources >
-    <stringTable >
+  <resources>
+    <stringTable>
       <string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 oder höher</string>
       <string id="UNSUPPORTED">Nicht mehr unterstützt.</string>
       <string id="SUPPORTED_FF60">Firefox 60 oder höher, Firefox 60 ESR oder höher</string>
@@ -45,9 +45,37 @@
       <string id="SUPPORTED_FF96">Firefox 96 oder höher, Firefox 91.5 ESR oder höher</string>
       <string id="SUPPORTED_FF96_ONLY">Firefox 96 oder höher</string>
       <string id="SUPPORTED_FF97">Firefox 97 oder höher, Firefox 91.6 ESR oder höher</string>
-      <string id="SUPPORTED_FF98">Firefox 98 oder höher, Firefox 91.7 ESR oder höher</string>
+      <string id="SUPPORTED_FF98_ONLY">Firefox 98 oder höher</string>
       <string id="SUPPORTED_FF99">Firefox 99 oder höher, Firefox 91.8 ESR oder höher</string>
       <string id="SUPPORTED_FF100">Firefox 100 oder höher, Firefox 91.9 ESR oder höher</string>
+      <string id="SUPPORTED_FF101">Firefox 101 oder höher, Firefox 91.10 ESR oder höher</string>
+      <string id="SUPPORTED_FF102">Firefox 102 oder höher</string>
+      <string id="SUPPORTED_FF104">Firefox 104 oder höher, Firefox 102.2 ESR oder höher</string>
+      <string id="SUPPORTED_FF105">Firefox 105 oder höher, Firefox 102.3 ESR oder höher</string>
+      <string id="SUPPORTED_FF106">Firefox 106 oder höher, Firefox 102.4 ESR oder höher</string>
+      <string id="SUPPORTED_FF107">Firefox 107 oder höher, Firefox 102.5 ESR oder höher</string>
+      <string id="SUPPORTED_FF108">Firefox 108 oder höher, Firefox 102.6 ESR oder höher</string>
+      <string id="SUPPORTED_FF109">Firefox 109 oder höher, Firefox 102.7 ESR oder höher</string>
+      <string id="SUPPORTED_FF110">Firefox 110 oder höher, Firefox 102.8 ESR oder höher</string>
+      <string id="SUPPORTED_FF112_ONLY">Firefox 112 oder höher</string>
+      <string id="SUPPORTED_FF113_ONLY">Firefox 113 oder höher</string>
+      <string id="SUPPORTED_FF114">Firefox 114 oder höher, Firefox 102.12 ESR oder höher</string>
+      <string id="SUPPORTED_FF118">Firefox 118 oder höher, Firefox 115.3 ESR oder höher</string>
+      <string id="SUPPORTED_FF120">Firefox 120 oder höher, Firefox 115.5 ESR oder höher</string>
+      <string id="SUPPORTED_FF121">Firefox 121 oder höher, Firefox 115.6 ESR oder höher</string>
+      <string id="SUPPORTED_FF122">Firefox 122 oder höher, Firefox 115.7 ESR oder höher</string>
+      <string id="SUPPORTED_FF123">Firefox 123 oder höher, Firefox 115.8 ESR oder höher</string>
+      <string id="SUPPORTED_FF124">Firefox 124 oder höher, Firefox 115.9 ESR oder höher</string>
+      <string id="SUPPORTED_FF124_ONLY">Firefox 124 oder höher</string>
+      <string id="SUPPORTED_FF125">Firefox 125 oder höher, Firefox 115.10 ESR oder höher</string>
+      <string id="SUPPORTED_FF126_ONLY">Firefox 126 oder höher</string>
+      <string id="SUPPORTED_FF127_ONLY">Firefox 127 oder höher</string>
+      <string id="SUPPORTED_FF128">Firefox 128 oder höher</string>
+      <string id="SUPPORTED_FF129">Firefox 129 oder höher, Firefox 128.1 ESR oder höher</string>
+      <string id="SUPPORTED_FF130">Firefox 130 oder höher, Firefox 128.2 ESR oder höher</string>
+      <string id="SUPPORTED_FF130_ONLY">Firefox 130 oder höher</string>
+      <string id="SUPPORTED_FF131">Firefox 131 oder höher, Firefox 128.3 ESR oder höhe</string>
+      <string id="SUPPORTED_FF136_ONLY">Firefox 136 oder höher</string>
       <string id="firefox">Firefox</string>
       <string id="Permissions_group">Berechtigungen</string>
       <string id="Camera_group">Kamera</string>
@@ -66,12 +94,16 @@
       <string id="Flash_group">Flash</string>
       <string id="Homepage_group">Startseite</string>
       <string id="Search_group">Suche</string>
-      <string id="Preferences_group">Einstellungen (veraltet)</string>
+      <string id="Preferences_group">Einstellungen (Veraltet)</string>
       <string id="UserMessaging_group">Benutzer-Benachrichtigungen</string>
-      <string id="DisabledCiphers_group">Disabled Ciphers</string>
+      <string id="DisabledCiphers_group">Deaktivierte Verschlüsselungsverfahren</string>
       <string id="EncryptedMediaExtensions_group">DRM-Medien Erweiterungen</string>
       <string id="PDFjs_group">PDF.js</string>
       <string id="PictureInPicture_group">Bild in Bild</string>
+      <string id="ProxySettings_group">Proxy</string>
+      <string id="SecurityDevices_group">Sicherheitsmodule</string>
+      <string id="FirefoxSuggest_group">Firefox Suggest (nur USA)</string>
+      <string id="ContentAnalysis_group">Verhinderung von Datenverlust (DLP)</string>
       <string id="Allow">Erlaubte Seiten</string>
       <string id="AllowSession">Erlaubte Seiten (Session Only)</string>
       <string id="Block">Gesperrte Seiten</string>
@@ -98,9 +130,9 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 
 Für weitere Informationen, besuchen Sie https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_NTLM">NTLM</string>
-      <string id="Authentication_NTLM_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwenden die angegebenen Webseiten NTLM Authentifizierung. Erlaubte Formate für die Einträge in der Liste sind mydomain.com oder https://myotherdomain.com.
+      <string id="Authentication_NTLM_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwenden die angegebenen Webseiten NTLM-Authentifizierung. Erlaubte Formate für die Einträge in der Liste sind mydomain.com oder https://myotherdomain.com.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwenden Webseiten die NTLM Authentifizierung nicht.
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwenden Webseiten die NTLM-Authentifizierung nicht.
 
 Für weitere Informationen, besuchen Sie https://developer.mozilla.org/en-US/docs/Mozilla/Integrated_authentication.</string>
       <string id="Authentication_AllowNonFQDN">Authentifiziert auch auf Nicht-FQDN</string>
@@ -108,19 +140,19 @@ Für weitere Informationen, besuchen Sie https://developer.mozilla.org/en-US/doc
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, sind NTLM und SPNEGO auf Nicht-FQDN Adressen nicht aktiviert.</string>
       <string id="Authentication_AllowProxies">Authentifiziert auch auf Proxies</string>
-      <string id="Authentication_AllowProxies_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, findet keine SPNEGO oder NTLM Authentifizierung gegenüber einem Proxy statt.
+      <string id="Authentication_AllowProxies_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, findet keine SPNEGO- oder NTLM-Authentifizierung gegenüber einem Proxy statt.
 
-Wenn diese Richtlinieneinstellung aktiviert (und das Kontrollkästchen aktiviert) oder nicht konfiguriert ist, findet SPNEGO und NTLM Authentifizierung gegenüber einem Proxy statt.</string>
+Wenn diese Richtlinieneinstellung aktiviert (und das Kontrollkästchen aktiviert) oder nicht konfiguriert ist, findet SPNEGO- und NTLM-Authentifizierung gegenüber einem Proxy statt.</string>
       <string id="Authentication_Locked">Änderungen an Authentifizierungseinstellungen verbieten</string>
       <string id="Authentication_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an den Einstellungen zur Authentifizierung vornehmen.
 
-Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer  Einstellungen zur Authentifizierung nicht ändern.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer Einstellungen zur Authentifizierung nicht ändern.</string>
       <string id="Authentication_PrivateBrowsing">Authentifizierung in Privaten Fenstern</string>
-      <string id="Authentication_PrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Interne Authentifizierung (via SPEGNO oder NTLM) auch in privaten Fenstern benutzt.
+      <string id="Authentication_PrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Interne Authentifizierung (via SPNEGO oder NTLM) auch in privaten Fenstern benutzt.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die interne Authentifizierung in privaten Fenstern nicht benutzt.</string>
       <string id="BlockAboutAddons">Zugriff auf Add-ons Manager verhindern</string>
-      <string id="BlockAboutAddons_Explain" >Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer nicht auf den Add-on Manager oder about:addons zugreifen.
+      <string id="BlockAboutAddons_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer nicht auf den Add-on Manager oder about:addons zugreifen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer auf den Add-ons Manager und about:addons zugreifen.</string>
       <string id="BlockAboutConfig">Zugriff auf about:config verhindern</string>
@@ -143,8 +175,8 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="CaptivePortal_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Unterstützung für Captive Portals deaktiviert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Unterstützung für Captive Portals aktiviert.</string>
-      <string id="Certificates_ImportEnterpriseRoots">Windows Zertifikatsspeicher benutzen</string>
-      <string id="Certificates_ImportEnterpriseRoots_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwendet Firefox den Windows Zertifikatsspeicher.
+      <string id="Certificates_ImportEnterpriseRoots">Windows-Zertifikatsspeicher benutzen</string>
+      <string id="Certificates_ImportEnterpriseRoots_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, verwendet Firefox den Windows-Zertifikatsspeicher.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox den eigenen Zertifikatsspeicher.</string>
       <string id="Certificates_Install">Zertifikate installieren</string>
@@ -170,17 +202,21 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist DNS
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Standardanbieter verwendet.</string>
 
       <string id="DNSOverHTTPS_Locked">Gesperrt</string>
-      <string id="DNSOverHTTPS_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die DNS über HTTPS-Einstellungen vom Benutzer nicht geändert werden.
+      <string id="DNSOverHTTPS_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die DNS-über-HTTPS-Einstellungen vom Benutzer nicht geändert werden.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können die DNS über HTTPS-Einstellungen vom Benutzer geändert werden.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können die DNS-über-HTTPS-Einstellungen vom Benutzer geändert werden.</string>
       <string id="DNSOverHTTPS_ExcludedDomains">Ausgeschlossene Domains</string>
       <string id="DNSOverHTTPS_ExcludedDomains_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die angegebenen Domains von DNS über HTTPS ausgeschlossen.
 
-Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, werden keine Domains vom DNS über HTTPS ausgeschlossen.</string>
-      <string id="DNSOverHTTPS">DNS über HTTPS konfigurieren (Moved)</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden keine Domains von DNS über HTTPS ausgeschlossen.</string>
+      <string id="DNSOverHTTPS">DNS über HTTPS konfigurieren (Verschoben)</string>
       <string id="DNSOverHTTPS_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können die Standardeinstellungen für DNS über HTTPS geändert werden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden von Mozilla Firefox die Standardeinstellungen zu DNS über HTTPS benutzt.</string>
+      <string id="DNSOverHTTPS_Fallback">Fallback</string>
+      <string id="DNSOverHTTPS_Fallback_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, greift Firefox nicht auf Ihren Standard-DNS-Server zurück, wenn ein Problem mit dem sicheren DNS-Anbieter auftritt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, verwendet Firefox Ihren Standard-DNS-Server, wenn ein Problem mit dem sicheren DNS-Anbieter auftritt.</string>
       <string id="DisableMasterPasswordCreation">Master-Passwort verwenden deaktivieren</string>
       <string id="DisableMasterPasswordCreation_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer kein Master-Passwort vergeben.
 
@@ -196,7 +232,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="DisableDefaultBrowserAgent">Deaktivieren Sie den Standard-Browser-Agent</string>
       <string id="DisableDefaultBrowserAgent_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der Standard-Browser-Agent deaktiviert.
 
-Wenn diese Richtlinie deaktiviert oder nicht konfiguriert ist, ist der Standard-Browser-Agent aktiviert.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, ist der Standard-Browser-Agent aktiviert.
 
 Weitere Informationen über den Standard-Browser-Agent finden Sie unter https://firefox-source-docs.mozilla.org/toolkit/mozapps/defaultagent/default-browser-agent/index.html</string>
       <string id="DisableDeveloperTools">Werkzeuge für Webentwickler deaktivieren</string>
@@ -204,9 +240,9 @@ Weitere Informationen über den Standard-Browser-Agent finden Sie unter https://
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können die Werkzeuge für Webentwickler in Firefox benutzt werden.</string>
       <string id="DisableFeedbackCommands">Feedback Commands deaktivieren</string>
-      <string id="DisableFeedbackCommands_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind &quot;Feedback senden...&quot; und &quot;Betrügerische Website melden…&quot; im Hilfemenü nicht verfügbar.
+      <string id="DisableFeedbackCommands_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind "Feedback senden..." und "Betrügerische Website melden…" im Hilfemenü nicht verfügbar.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind &quot;Feedback senden...&quot; und &quot;Betrügerische Website melden..&quot; im Hilfemenü verfügbar.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind "Feedback senden..." und "Betrügerische Website melden.." im Hilfemenü verfügbar.</string>
       <string id="DisableFirefoxAccounts">Firefox-Konto deaktivieren</string>
       <string id="DisableFirefoxAccounts_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht Firefox-Konto nicht zur Verfügung, dies beinhaltet auch die Synchronisierung.
 
@@ -222,13 +258,13 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
 
 Für weitere Informationen, besuchen Sie https://support.mozilla.org/en-US/kb/shield und https://wiki.mozilla.org/Firefox/Shield/Heartbeat</string>
       <string id="DisableForgetButton">Vergessen Button deaktivieren</string>
-      <string id="DisableForgetButton_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der &quot;Vergessen&quot; Button nicht zur Verfügung.
+      <string id="DisableForgetButton_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der "Vergessen" Button nicht zur Verfügung.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der &quot;Vergessen&quot; Button zur Verfügung.</string>
-      <string id="DisableFormHistory">Chronik deaktivieren</string>
-      <string id="DisableFormHistory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox dieselben Einstellungen wie im Privaten Modus verwenden und keinerlei Chronik anlegen.
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der "Vergessen" Button zur Verfügung.</string>
+      <string id="DisableFormHistory">Formular- und Suchverlaufhistorie deaktivieren</string>
+      <string id="DisableFormHistory_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird Firefox keine Formular- oder Suchverläufe speichern.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, Firefox wird eine Chronik anlegen.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird Firefox Formular- und Suchverläufe speichern.</string>
       <string id="DisablePasswordReveal">Verbieten, dass Nutzer Passwörter in Gespeicherte Zugangsdaten anzeigen können</string>
       <string id="DisablePasswordReveal_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Nutzer Gespeicherte Zugangsdaten nicht anzeigen lassen.
 
@@ -241,23 +277,23 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht
       <string id="DisablePrivateBrowsing_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, ist privates Surfen nicht erlaubt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, ist privates Surfen erlaubt.</string>
-      <string id="DisableProfileImport">Profil Import deaktivieren</string>
-      <string id="DisableProfileImport_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht die Option &quot;Daten von einen anderen Browser importieren..&quot; in der Bibliothek nicht zur Verfügung.
+      <string id="DisableProfileImport">Profil-Import deaktivieren</string>
+      <string id="DisableProfileImport_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht die Option "Daten von einen anderen Browser importieren.." in der Bibliothek nicht zur Verfügung.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht die Option &quot;Daten von einen anderen Browser importieren..&quot; in der Bibliothek zur Verfügung.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht die Option "Daten von einen anderen Browser importieren.." in der Bibliothek zur Verfügung.</string>
       <string id="DisableProfileRefresh">Firefox bereinigen deaktivieren</string>
-      <string id="DisableProfileRefresh_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der &quot;Firefox bereinigen...&quot; Button auf der about:support Seite oder auf support.mozilla.org nicht zur Verfügung.
+      <string id="DisableProfileRefresh_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht der "Firefox bereinigen..." Button auf der about:support Seite oder auf support.mozilla.org nicht zur Verfügung.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der &quot;Firefox bereinigen...&quot; Button auf der about:support Seite oder auf support.mozilla.org zur Verfügung.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht der "Firefox bereinigen..." Button auf der about:support Seite oder auf support.mozilla.org zur Verfügung.</string>
       <string id="DisableSafeMode">Abgesicherten Modus deaktivieren</string>
-      <string id="DisableSafeMode_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer die Option &quot;Mit deaktivierten Add-ons neu starten...&quot; (Abgesicherter Modus) im Hilfemenü nicht auswählen.
+      <string id="DisableSafeMode_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer die Option "Mit deaktivierten Add-ons neu starten..." (Abgesicherter Modus) im Hilfemenü nicht auswählen.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Option &quot;Mit deaktivierten Add-ons neu starten...&quot; (Abgesicherter Modus) im Hilfemenü auswählen.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Option "Mit deaktivierten Add-ons neu starten..." (Abgesicherter Modus) im Hilfemenü auswählen.</string>
       <string id="DisableSecurityBypass_InvalidCertificate">Ausnahme hinzufügen verhindern bei unsicheren Zertifikaten</string>
-      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht &quot;Ausnahme hinzufügen&quot; nicht zur Verfügung, wenn ein Zertifikat ungültig ist. Dies verhindert, dass ein Benutzer Zertifikatsfehler überschreibt.
+      <string id="DisableSecurityBypass_InvalidCertificate_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, steht "Ausnahme hinzufügen" nicht zur Verfügung, wenn ein Zertifikat ungültig ist. Dies verhindert, dass ein Benutzer Zertifikatsfehler überschreibt.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht &quot;Ausnahme hinzufügen&quot; zur Verfügung, wenn ein Zertifikat ungültig ist.</string>
-      <string id="DisableSecurityBypass_SafeBrowsing">Betrugsversuch- und Schadprogrammschutz ändern</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, steht "Ausnahme hinzufügen" zur Verfügung, wenn ein Zertifikat ungültig ist.</string>
+      <string id="DisableSecurityBypass_SafeBrowsing">Ausnahme hinzufügen verhindern bei betrügerischen oder schädlichen Weseiten</string>
       <string id="DisableSecurityBypass_SafeBrowsing_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz nicht umgehen um eine schädliche Webseite zu besuchen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer Warnungen zu Betrugsversuch- und Schadprogrammschutz umgehen um eine schädliche Webseite zu besuchen.</string>
@@ -271,10 +307,17 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden Telemetriedaten versendet.
 
 Mozilla empfiehlt, die Telemetrie nicht zu deaktivieren. Durch Telemetrie gesammelte Informationen helfen uns, ein besseres Produkt für Unternehmen wie Ihres zu erstellen.</string>
-      <string id="DisplayBookmarksToolbar">Lesezeichenleiste anzeigen</string>
+      <string id="DisplayBookmarksToolbar">Lesezeichenleiste anzeigen (Veraltet)</string>
       <string id="DisplayBookmarksToolbar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Lesezeichenleiste standardmäßig in der Menüleiste angezeigt, der Benutzer kann diese wieder ausblenden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Lesezeichenleiste nicht in der Menüleiste angzeigt.</string>
+      <string id="DisplayBookmarksToolbar_Enum">Lesezeichen-Symbolleiste anzeigen</string>
+      <string id="DisplayBookmarksToolbar_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kann die Standardanzeige der Lesezeichen-Symbolleiste konfiguriert werden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Lesezeichen-Symbolleiste standardmäßig auf der neuen Registerkarte angezeigt.</string>
+      <string id="DisplayBookmarksToolbar_Always">Immer</string>
+      <string id="DisplayBookmarksToolbar_Never">Niemals</string>
+      <string id="DisplayBookmarksToolbar_NewTab">Neuer Tab</string>
       <string id="DisplayMenuBar">Menüleiste anzeigen (Veraltet)</string>
       <string id="DisplayMenuBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, wird die Menüleiste standardmäßig angezeigt, der Benutzer kann diese wieder ausblenden.
 
@@ -309,6 +352,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="ExtensionUpdate_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, werden Add-ons nicht automatisch aktualisiert.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, werden Add-ons automatisch aktualisiert.</string>
+      <string id="ExtensionSettingsOneLine">Erweiterungen mit JSON verwalten (Einzeiliger JSON-Code)</string>
       <string id="ExtensionSettings">Erweiterungen mit JSON verwalten</string>
       <string id="ExtensionSettings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die Einstellungen zu Erweiterungen mit einer JSON-Datei verwaltet.
 
@@ -323,22 +367,22 @@ Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird di
       <string id="LegacyProfiles_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox keine separaten Profile bei mehreren parallelen Installationen anlegen. Diese Einstellung ist equivalent zu der Umgebungsvariable MOZ_LEGACY_PROFILES.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Firefox separate Profile für jede Installation anlegen.</string>
-      <string id="LegacySameSiteCookieBehaviorEnabled">Revert to legacy SameSite behavior</string>
-      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+      <string id="LegacySameSiteCookieBehaviorEnabled">Wiederherstellung des alten SameSite-Verhaltens</string>
+      <string id="LegacySameSiteCookieBehaviorEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kehrt Firefox zum alten Verhalten von SameSite zurück. Das bedeutet, dass Cookies, die nicht explizit ein SameSite-Attribut angeben, so behandelt werden, als ob sie SameSite=None wären.
 
-If this policy is disabled or not configured, Firefox will enforce SameSite=lax.</string>
-      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Revert to legacy SameSite behavior on specific domains</string>
-      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">If this policy is enabled, Firefox will revert to the legacy behavior of SameSite for the specified domains. This means that cookies that don't explicitly specify a SameSite attribute are treated as if they were SameSite=None.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erzwingt Firefox SameSite=lax.</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList">Wiederherstellung des alten SameSite-Verhaltens für bestimmte Domains</string>
+      <string id="LegacySameSiteCookieBehaviorEnabledForDomainList_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, kehrt Firefox für die angegebenen Domains zum alten SameSite-Verhalten zurück. Das bedeutet, dass Cookies, die nicht explizit ein SameSite-Attribut angeben, so behandelt werden, als ob sie SameSite=None wären.
 
-If this policy is disabled or not configured, Firefox will enforce SameSite=lax for all domains.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erzwingt Firefox für alle Domains SameSite=lax.</string>
       <string id="LocalFileLinks">Links zu lokalen Dateien</string>
       <string id="LocalFileLinks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Quellen angeben, von denen Links auf lokale Dateien erlaubt sind.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, können Websites nicht auf lokale Dateien verlinken.</string>
-      <string id="NetworkPrediction">Network Prediction</string>
-      <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird Network Prediction (DNS prefetching) deaktiviert.
+      <string id="NetworkPrediction">Netzwerkvorhersage</string>
+      <string id="NetworkPrediction_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, wird die Netzwerkvorhersage (DNS-Prefetching) deaktiviert.
 
-Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird Network Prediction (DNS prefetching) aktiviert.</string>
+Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird die Netzwerkvorhersage (DNS-Prefetching) aktiviert.</string>
       <string id="NewTabPage">Neuer Tab Seite</string>
       <string id="NewTabPage_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die Neuer Tab Seite leer sein.
 
@@ -347,7 +391,7 @@ Wenn die Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die 
       <string id="OfferToSaveLogins_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren, fordert Firefox nicht zum Speichern von Logindaten und Passwörtern auf.</string>
-      <string id="OfferToSaveLoginsDefault">Zugangsdaten und Passwörter für Webseiten speichen (default)</string>
+      <string id="OfferToSaveLoginsDefault">Zugangsdaten und Passwörter für Webseiten speichen (Standard)</string>
       <string id="OfferToSaveLoginsDefault_Explain">Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, fordert Firefox zum speichern von Logindaten und Passwörtern auf.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren, fordert Firefox nicht zum Speichern von Logindaten und Passwörtern auf.
@@ -356,7 +400,7 @@ In beiden Fällen kann der Benutzer den Wert ändern (er ist nicht gesperrt).</s
       <string id="PopupBlocking_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Popup-Fenster für die angegebenen URLs immer erlaubt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), sind Popup-Fenster für alle Subdomains ebenfalls zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Popup-Fenster Richtlinie angewendet.</string>
-      <string id="PopupBlocking_Default">Pop-up-Blocker deaktivieren</string>
+      <string id="PopupBlocking_Default">Pop-ups von Webseiten blockieren</string>
       <string id="PopupBlocking_Default_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, sind Popup-Fenster standardmäßig von Webseiten zugelassen.
 
 Wenn Sie die Richtlinieneinstellung aktivieren oder nicht konfigurieren, sind Popup-Fenster standardmäßig von Webseiten nicht erlaubt.</string>
@@ -367,7 +411,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, könn
       <string id="InstallAddonsPermission_Allow_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Add-Ons immer für die angegebenen URLs zulässig, sofern die Add-On-Installation nicht deaktiviert ist. Wenn eine Top-Level-Domain angegeben ist (http://example.org), sind Add-Ons für alle Subdomains ebenfalls zulässig.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Standard Add-On Richtlinie verwendet.</string>
-      <string id="InstallAddonsPermission_Default">Add-On Installation deaktivieren</string>
+      <string id="InstallAddonsPermission_Default">Add-On Installation aktivieren</string>
       <string id="InstallAddonsPermission_Default_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, können keine Add-ons installiert werden.
 
 Wenn Sie die Richtlinieneinstellungen nicht konfigurieren oder aktivieren, können Add-ons installiert werden.</string>
@@ -380,11 +424,11 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="Cookies_Block_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, sind Cookies für die angegebenen URLs gesperrt. Wenn eine Top-Level-Domain angegeben ist (http://example.org), werden Cookies von allen Sub-Domains ebenfalls blockiert.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, sind Cookies standardmäßig nicht blockiert.</string>
-      <string id="Cookies_Default">Cookies und Website-Daten annehmen (veraltet)</string>
+      <string id="Cookies_Default">Cookies und Website-Daten annehmen (Veraltet)</string>
       <string id="Cookies_Default_Explain">Wenn Sie die Richtlinieneinstellung deaktivieren, werden Cookies standardmäßig nicht von Webseiten akzeptiert.
 
 Wenn Sie die Richtlinieneinstellung nicht konfigurieren oder aktivieren, werden Cookies von Websiten akzeptiert.</string>
-      <string id="Cookies_AcceptThirdParty">Cookies und Website-Daten von Drittanbietern akzeptieren (veraltet)</string>
+      <string id="Cookies_AcceptThirdParty">Cookies und Website-Daten von Drittanbietern akzeptieren (Veraltet)</string>
       <string id="Cookies_AcceptThirdParty_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlauben, können Sie einstellen wie Sie Cookies von Drittanbietern akzeptieren.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn Cookies nicht erlaubt sind.</string>
@@ -394,8 +438,8 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder w
       <string id="Cookies_ExpireAtSessionEnd">Cookies behalten, bis Firefox geschlossen ist</string>
       <string id="Cookies_ExpireAtSessionEnd_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und Cookies erlaubt sind, werden diese gelöscht sobald Firefox geschlossen wird.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn &quot;Cookies und Website-Daten annehmen&quot; deaktiviert ist wird diese Richtlinieneinstellung ignoriert.</string>
-      <string id="Cookies_RejectTracker">Tracker ablehnen (veraltet)</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren oder wenn "Cookies und Website-Daten annehmen" deaktiviert ist wird diese Richtlinieneinstellung ignoriert.</string>
+      <string id="Cookies_RejectTracker">Tracker ablehnen (Veraltet)</string>
       <string id="Cookies_RejectTracker_Explain">Wenn diese Richtlinieneinstellung aktiviert ist und Cookies aktiviert sind, werden Tracker-Cookies standardmäßig abgewiesen.
 
 Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist oder Cookies durch eine andere Richtlinie oder Einstellung nicht erlaubt sind.</string>
@@ -403,20 +447,20 @@ Diese Einstellung wird ignoriert wenn diese Richtlinieneinstellung deaktiviert o
       <string id="Cookies_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren können Benutzer die Cookie-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Cookie-Einstellungen ändern.</string>
-      <string id="Cookies_Behavior">Cookie Behavior</string>
-      <string id="Cookies_Behavior_Explain">If this policy is enabled, you can configure cookie behavior.
+      <string id="Cookies_Behavior">Cookie-Verhalten</string>
+      <string id="Cookies_Behavior_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Cookie-Verhalten konfigurieren.
 
-If this policy is not configured or disabled, cookies are rejected for known trackers.</string>
-      <string id="Cookies_BehaviorPrivateBrowsing">Cookie Behavior in private browsing</string>
-      <string id="Cookies_BehaviorPrivateBrowsing_Explain">If this policy is enabled, you can configure cookie behavior in private browsing.
+Wenn diese Richtlinieneinstellung nicht konfiguriert oder deaktiviert ist, werden Cookies für bekannte Tracker abgelehnt.</string>
+      <string id="Cookies_BehaviorPrivateBrowsing">Cookie-Verhalten beim privaten Surfen</string>
+      <string id="Cookies_BehaviorPrivateBrowsing_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Cookie-Verhalten beim privaten Surfen konfigurieren.
 
-If this policy is not configured or disabled, in private browsing, cookies are rejected for known trackers and third-party cookies are partitioned.</string>
-      <string id="Cookies_Behavior_Accept">Accept all cookies</string>
-      <string id="Cookies_Behavior_RejectForeign">Reject third party cookies</string>
-      <string id="Cookies_Behavior_Reject">Reject all cookies</string>
-      <string id="Cookies_Behavior_LimitForeign">Reject third party cookies for sites you haven't visited</string>
-      <string id="Cookies_Behavior_RejectTracker">Reject cookies for known trackers</string>
-      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Reject cookies for known trackers and partition third-party cookies (Total Cookie Protection)</string>
+Wenn diese Richtlinieneinstellung nicht konfiguriert oder deaktiviert ist, werden beim privaten Surfen Cookies für bekannte Tracker abgelehnt und Cookies von Drittanbietern werden aufgeteilt.</string>
+      <string id="Cookies_Behavior_Accept">Alle Cookies akzeptieren</string>
+      <string id="Cookies_Behavior_RejectForeign">Cookies von Drittanbietern ablehnen</string>
+      <string id="Cookies_Behavior_Reject">Alle Cookies ablehnen</string>
+      <string id="Cookies_Behavior_LimitForeign">Cookies von Drittanbietern für Websites, die Sie nicht besucht haben, ablehnen</string>
+      <string id="Cookies_Behavior_RejectTracker">Cookies für bekannte Tracker ablehnen</string>
+      <string id="Cookies_Behavior_RejectTrackerAndPartitionForeign">Ablehnung von Cookies für bekannte Tracker und Partitionierung von Drittanbieter-Cookies (Vollständiger Cookie-Schutz)</string>
       <string id="Camera_Allow_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Kamera für die genannten Quellen automatisch freigegeben.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Standardeinstellung befolgt.</string>
@@ -522,7 +566,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
 Wenn Sie die Richtlinieneinstellung deaktivieren, wird Flash niemals auf Webseiten aktiviert, selbst wenn sie in der Zulassen-Liste aufgeführt sind.
 
 Wenn Sie die Richtlinieneinstellung nicht konfigurieren, ist Flash ausführbar.</string>
-      <string id="FlashPlugin_Locked">Flash Einstellungen sperren</string>
+      <string id="FlashPlugin_Locked">Flash-Einstellungen sperren</string>
       <string id="FlashPlugin_Locked_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Benutzer die Flash-Einstellungen nicht ändern.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Flash-Einstellungen ändern.</string>
@@ -536,7 +580,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird 
       <string id="OverridePostUpdatePage_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine URL angeben, die nach der Aktualisierung von Firefox angezeigt wird. Wenn Sie die URL leer lassen, wird keine Upgrade-Seite angezeigt.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren wird eine Upgrade Seite angezeigt.</string>
-      <string id="SanitizeOnShutdown">Die Chronik löschen, wenn Firefox geschlossen wird</string>
+      <string id="SanitizeOnShutdown">Die Chronik löschen, wenn Firefox geschlossen wird (Verschoben)</string>
       <string id="SanitizeOnShutdown_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, werden alle Daten der Chronik gelöscht, wenn Firefox geschlossen wird. Dies beinhaltet Browsing &amp; Download Verlauf, Cookies, Aktive Logins, Cache, Form &amp; Suchverlauf, Website-Einstellungen und Offline-Website-Daten.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die keine Daten der Chronik gelöscht.</string>
@@ -550,11 +594,11 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="SanitizeOnShutdown_Cookies_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Cookies gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Cookies nicht gelöscht wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_Downloads">Download-Historie</string>
+      <string id="SanitizeOnShutdown_Downloads">Download-Historie (Veraltet)</string>
       <string id="SanitizeOnShutdown_Downloads_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die Download-Historie gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Download-Historie nicht gelöscht, wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe und Formulardaten</string>
+      <string id="SanitizeOnShutdown_FormData">Eingegebene Suchbegriffe und Formulardaten (Veraltet)</string>
       <string id="SanitizeOnShutdown_FormData_Explain">Wenn diese Gruppenrichtlinieneinstellung aktiviert ist, werden eingegebene Suchbegriffe und Formulardaten gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden eingegebene Suchbegriffe und Formulardaten nicht gelöscht, wenn der Browser geschlossen wird.</string>
@@ -565,16 +609,16 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="SanitizeOnShutdown_Sessions">Gespeicherte Logins</string>
       <string id="SanitizeOnShutdown_Sessions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden gespeicherte Logins gelöscht, nachdem der Browser geschlossen wurde.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist,  werden gespeicherte Logins nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden gespeicherte Logins nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
       <string id="SanitizeOnShutdown_SiteSettings">Website-Einstellungen</string>
       <string id="SanitizeOnShutdown_SiteSettings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Website-Einstellungen gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Website-Einstellungen nicht gelöscht, nachdem der Browser geschlossen wurde.</string>
-      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Daten</string>
+      <string id="SanitizeOnShutdown_OfflineApps">Offline Website Daten (Veraltet)</string>
       <string id="SanitizeOnShutdown_OfflineApps_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Offline Website-Daten gelöscht, wenn der Browser geschlossen wird.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Offline Website-Daten nicht gelöscht, wenn der Browser geschlossen wird.</string>
-      <string id="SanitizeOnShutdown_Locked">Locked</string>
+      <string id="SanitizeOnShutdown_Locked">Gesperrt</string>
       <string id="SanitizeOnShutdown_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert sind, können alle Einstellungen vom Nutzer geändert werden.
 
 Wenn diese Richtlinieneinstellung aktiviert ist, können Einstellungen vom Nutzer nicht geändert werden.</string>
@@ -586,6 +630,11 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="WebsiteFilter_Exceptions_Explain">Wenn Sie die Richtlinieneinstellung aktivieren und der Webseiten-Filter aktiviert ist, können Sie Übereinstimmungsmuster für Webseiten angeben, die nicht blockiert werden sollen. Die Übereinstimmungsmuster sind unter https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns dokumentiert. Es gibt eine Beschränkung von 1000 Einträgen.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, gibt es keine Ausnahmen für den Webseiten-Filter.</string>
+      <string id="WebsiteFilterOneLine">Webseiten-Filter (Einzeiliger JSON-Code)</string>
+      <string id="WebsiteFilter">Webseiten-Filter (JSON)</string>
+      <string id="WebsiteFilter_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie blockierte Webseiten und Ausnahmen über JSON angeben.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Webseiten nicht gefiltert.</string>
       <string id="Bookmark01">Lesezeichen 01</string>
       <string id="Bookmark02">Lesezeichen 02</string>
       <string id="Bookmark03">Lesezeichen 03</string>
@@ -646,7 +695,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
 
 Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden die Standardlesezeichen und Smart-Lesezeichen (meist besuchte, neueste Tags) erstellt.
 
-Hinweis: Diese Richtlinie ist nur wirksam, wenn Sie vor der ersten Ausführung von Firefox verwendet wurde.</string>
+Hinweis: Diese Richtlinieneinstellung ist nur wirksam, wenn Sie vor der ersten Ausführung von Firefox verwendet wurde.</string>
       <string id="HomepageURL">Startseite</string>
       <string id="HomepageURL_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie eine Startseite festlegen. Sie können die Startseite auch sperren.
 
@@ -662,7 +711,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird 
       <string id="None">Leere Seite</string>
       <string id="Homepage">Startseite</string>
       <string id="PreviousSession">Letzte Sitzung</string>
-      <string id="HomepageLocked">Homepage (Locked)</string>
+      <string id="HomepageLocked">Homepage (Gesperrt)</string>
       <string id="Homepage_ShowHomeButton">Home-Button zur Symbolleiste hinzufügen</string>
       <string id="Homepage_ShowHomeButton_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, erscheint der Home-Button standardmäßig in der Symbolleiste.
 
@@ -673,6 +722,10 @@ Wenn diese Richtlinieneinstellung nicht konfiguriert ist, entscheidet Firefox se
       <string id="PasswordManagerEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist der Passwort-Manager nicht über die Einstellungen verfügbar.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist der Passwort-Manager über die Einstellungen verfügbar.</string>
+      <string id="PasswordManagerExceptions">Password Manager Ausnahmen</string>
+      <string id="PasswordManagerExceptions_Explain">Wenn diese Richtlinieeinstellung aktiviert ist, können Sie Webseiten angeben, auf denen Firefox das Speichern von Passwörtern nicht anbietet.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, bietet Firefox die Speicherung von Passwörtern auf allen Webseiten an.</string>
       <string id="PromptForDownloadLocation">Abfrage des Download-Verzeichnisses</string>
       <string id="PromptForDownloadLocation_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Nutzer nicht nach einem Verzeichnis für den Download gefragt.
 
@@ -689,7 +742,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="SOCKSVersion5">SOCKS v5</string>
       <string id="AutoConfigURL">Automatische Proxy-Konfigurations-Adresse</string>
       <string id="AutoConfigURL_Explain">Dies sollten Sie nur einstellen, wenn Sie autoConfig ausgewählt haben</string>
-      <string id="Passthrough">Proxy Ausnahmen</string>
+      <string id="Passthrough">Proxy-Ausnahmen</string>
       <string id="Passthrough_Explain">Dies sollten Sie nur einstellen, wenn Sie manuelle Proxy-Konfiguration ausgewählt haben</string>
       <string id="Connection">Verbindungs-Einstellungen</string>
       <string id="NoProxy">Kein Proxy</string>
@@ -697,13 +750,13 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werde
       <string id="ManualProxy">Manuelle Proxy-Konfiguration</string>
       <string id="AutoDetectProxy">Die Proxy-Einstellungen für dieses Netzwek automatisch erkennen</string>
       <string id="AutoConfigProxy">Automatische Proxy-Konfiguration</string>
-      <string id="TrackingProtection">Schutz vor Aktivitäten Verfolgung</string>
+      <string id="TrackingProtection">Schutz vor Aktivitätenverfolgung (Verschoben)</string>
       <string id="TrackingProtection_Explain">Wenn Sie die Richtlinieneinstellung nicht konfigurieren, ist der Aktivitäten-Verfolgungsschutz im Browser standardmäßig nicht aktiviert, im privaten Browser ist er jedoch standardmäßig aktiviert und kann vom Benutzer geändert werden.
 
 Wenn Sie die Richtlinieneinstellung deaktivieren, ist der Aktivitäten-Verfolgungsschutz sowohl im Browser als auch im privaten Browser deaktiviert und gesperrt.
 
 Wenn Sie die Richtlinieneinstellung aktivieren, privates Surfen ist sowohl im Browser als auch im privaten Browser standardmäßig aktiviert, und Sie können festlegen, ob der Benutzer die Änderung ändern soll oder nicht</string>
-      <string id="TrackingProtection_group">Tracking Protection</string>
+      <string id="TrackingProtection_group">Tracking-Schutz</string>
       <string id="TrackingProtection_Value">Aktiviert</string>
       <string id="TrackingProtection_Value_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der Schutz vor Aktivitätenverfolgung aktiviert.
 
@@ -714,10 +767,10 @@ Wenn diese Richtlinieneinstellung nicht konfiguriert ist, sind die Standardeinst
       <string id="TrackingProtection_Cryptomining_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Cryptomining-Skripte blockiert.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Cryptomining-Skripte nicht blockiert.</string>
-      <string id="TrackingProtection_Fingerprinting">Fingerprinting</string>
-      <string id="TrackingProtection_Fingerprinting_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Fingerprinting-Skripte blockiert.
+      <string id="TrackingProtection_Fingerprinting">Identifizierer (Fingerprinter)</string>
+      <string id="TrackingProtection_Fingerprinting_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Identifizierer-Skripte blockiert.
 
-Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Fingerprinting-Skripte nicht blockiert.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Identifizierer-Skripte nicht blockiert.</string>
       <string id="TrackingProtection_Exceptions">Ausnahmen</string>
       <string id="TrackingProtection_Exceptions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Ausnahmen-Seiten definiert werden, bei denen der Schutz vor Aktivitätenverfolgung deaktiviert ist.
 
@@ -726,7 +779,11 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, gelte
       <string id="TrackingProtection_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Nutzer keine Änderungen an den Einstellungen zum Schutz vor Aktivitätenverfolgung vornehmen.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Nutzer Änderungen an den Einstellungen vornehmen.</string>
-      <string id="RequestedLocales">Requested locale</string>
+      <string id="TrackingProtection_EmailTracking">E-Mail-Verfolgung</string>
+      <string id="TrackingProtection_EmailTracking_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden versteckte E-Mail-Pixel und Skripte auf Websites blockiert.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden versteckte E-Mail-Pixel und Skripte auf Websites nicht blockiert.</string>
+      <string id="RequestedLocales">Angefordertes Gebietsschema</string>
       <string id="RequestedLocalesString">Angefordertes Gebietsschema (Zeichenfolge)</string>
       <string id="RequestedLocales_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste der angeforderten Gebietsschemata für die Anwendung in der Reihenfolge ihrer Präferenz angeben. Dadurch wird das entsprechende Sprachpaket aktiv.
 
@@ -735,6 +792,11 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwe
       <string id="SecurityDevices_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste mit PKCS #11 Modulen definieren. Module werden mit einem Namen und einem qualifizierten Pfad benannt.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden keine weiteren PKCS #11 Module installiert.</string>
+      <string id="SecurityDevices_Add">Hinzufügen</string>
+      <string id="SecurityDevices_Delete">Entfernen</string>
+      <string id="SecurityDevices_Delete_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Namen der zu entfernenden PKCS #11-Module angeben.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden keine PKCS #11-Module entfernt.</string>
       <string id="SearchBar">Position der Suchleiste</string>
       <string id="SearchBar_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, können Sie festlegen, ob die Suchleiste von der Adressleiste getrennt ist.
 
@@ -772,7 +834,7 @@ Wenn Sie die Richtlinieneinstellung nicht konfigurieren, werden Suchvorschläge 
       <string id="SSLVersionMin">Minimale SSL-Version</string>
       <string id="SSLVersionMin_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine SSL/TLS-Version unter der angegebenen Version verwenden.
 
-Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.0.</string>
+Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwendet Firefox die Standardeinstellung von TLS 1.2.</string>
       <string id="SSLVersionMax">Maximale SSL-Version</string>
       <string id="SSLVersionMax_Explain">Wenn Sie die Richtlinieneinstellung aktivieren, Firefox wird keine höhere SSL/TLS-Version als der angegebenen Version verwenden.
 
@@ -785,7 +847,7 @@ Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, verwe
       <string id="SupportMenu_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird ein Menüeintrag mit spezifizierten Supportinformationen zum "Hilfe"-Menü hinzugefügt.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird kein Menüeintrag hinzugefügt.</string>
-      <string id="UserMessaging_WhatsNew">Neue Funktionen und Änderungen</string>
+      <string id="UserMessaging_WhatsNew">Neue Funktionen und Änderungen (Veraltet)</string>
       <string id="UserMessaging_WhatsNew_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden das Symbol und der Menüpunkt "Neue Funktionen und Änderungen" nicht angezeigt.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden das Symbol und der Menüpunkt "Neue Funktionen und Änderungen" angezeigt.</string>
@@ -793,18 +855,30 @@ Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden 
       <string id="UserMessaging_ExtensionRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Erweiterungen nicht empfohlen, wenn der Benutzer Webseiten besucht.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Erweiterungen empfohlen, wenn der Benutzer Webseiten besucht.</string>
-      <string id="UserMessaging_FeatureRecommendations">Feature-Empfehlungen</string>
-      <string id="UserMessaging_FeatureRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden die Funktionen von Firefox nicht empfohlen, wenn der Benutzer Firefox verwendet.
+      <string id="UserMessaging_FeatureRecommendations">Funktions-Empfehlungen</string>
+      <string id="UserMessaging_FeatureRecommendations_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden keine Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.
 
-Wenn diese Richtlinie aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Firefox-Funktionen empfohlen, wenn der Benutzer Firefox verwendet.</string>
       <string id="UserMessaging_UrlbarInterventions">Adressleisten-Empfehlungen</string>
-      <string id="UserMessaging_UrlbarInterventions_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden  basierend darauf, was der Benutzer in die Adressleiste eingibt, keine Aktionen empfohlen.
+      <string id="UserMessaging_UrlbarInterventions_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden basierend darauf, was der Benutzer in die Adressleiste eingibt, keine Aktionen empfohlen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Aktionen empfohlen, die darauf basieren, was der Benutzer in die Adressleiste eingibt.</string>
-      <string id="UserMessaging_SkipOnboarding">Skip Onboarding</string>
-      <string id="UserMessaging_SkipOnboarding_Explain">If this policy is enabled, onboarding messages will not be shown on the new tab page.
+      <string id="UserMessaging_SkipOnboarding">Onboarding überspringen</string>
+      <string id="UserMessaging_SkipOnboarding_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden auf der neuen Registerkarte keine Onboarding-Nachrichten angezeigt.
 
-If this policy is disabled or not configured, onboarding messages will be shown on the new tab page.</string>
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden auf der neuen Registerkarte Onboarding-Nachrichten angezeigt.</string>
+      <string id="UserMessaging_MoreFromMozilla">Mehr von Mozilla</string>
+      <string id="UserMessaging_MoreFromMozilla_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Abschnitt "Mehr von Mozilla" in den Einstellungen nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird der Abschnitt "Mehr von Mozilla" in den Einstellungen angezeigt.</string>
+      <string id="UserMessaging_FirefoxLabs">Firefox Labs</string>
+      <string id="UserMessaging_FirefoxLabs_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird der Abschnitt "Firefox Labs" in den Einstellungen nicht angezeigt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird der Abschnitt "Firefox Labs" in den Einstellungen angezeigt.</string>
+      <string id="UserMessaging_Locked">Keine Änderung der Einstellungen für die Nachrichtenübermittlung zulassen</string>
+      <string id="UserMessaging_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können die Einstellungen für die Nachrichtenübermittlung vom Benutzer geändert werden.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können die Einstellungen für die Nachrichtenübermittlung nicht vom Benutzer geändert werden.</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_128_CBC_SHA">TLS_DHE_RSA_WITH_AES_128_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_DHE_RSA_WITH_AES_256_CBC_SHA">TLS_DHE_RSA_WITH_AES_256_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</string>
@@ -816,16 +890,22 @@ If this policy is disabled or not configured, onboarding messages will be shown 
       <string id="DisabledCiphers_TLS_RSA_WITH_3DES_EDE_CBC_SHA">TLS_RSA_WITH_3DES_EDE_CBC_SHA</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_128_GCM_SHA256">TLS_RSA_WITH_AES_128_GCM_SHA256</string>
       <string id="DisabledCiphers_TLS_RSA_WITH_AES_256_GCM_SHA384">TLS_RSA_WITH_AES_256_GCM_SHA384</string>
-      <string id="DisabledCiphers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist der ausgewählte Cipher deaktiviert.
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA">TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA">TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384">TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</string>
+      <string id="DisabledCiphers_TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256">TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256</string>
+      <string id="DisabledCiphers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die ausgewählte Verschlüsselung deaktiviert.
 
-Wenn diese Richtlinieneinstellung deaktiviert ist, ist der ausgewählte Cipher aktiviert.
+Wenn diese Richtlinieneinstellung deaktiviert ist, ist der ausgewählte Verschlüsselung aktiviert.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, werden die Standardeinstellungen in Firefox verwendet.</string>
       <string id="EncryptedMediaExtensions_Enabled">DRM-Medien Erweiterungen</string>
       <string id="EncryptedMediaExtensions_Enabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden DRM-Medien Erweiterungen (wie z.B. Widevine) nicht durch Mozilla Firefox heruntergeladen außer der Nutzer stimmt dem Download explizit zu.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden DRM-Medien Erweiterungen (wie z.B. Widevine) nicht durch Mozilla Firefox heruntergeladen und benutzt.</string>
-      <string id="EncryptedMediaExtensions_Locked">Lock Encrypted Media Extensions</string>
+      <string id="EncryptedMediaExtensions_Locked">Einstellung zu DRM-Medien Erweiterungen sperren</string>
       <string id="EncryptedMediaExtensions_Locked_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Nutzer Änderungen an der Einstellung zu DRM-Medien Erweiterungen vornehmen.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Nutzer die Einstellung zu DRM-Medien Erweiterungen nicht ändern.</string>
@@ -851,6 +931,7 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
 Wenn diese Richtlinieneinstellung deaktiviert ist, ist das Setzen eines Masterpasswortes nicht möglich.
 
 Wenn diese Richtlinieneinstellung nicht konfiguriert ist, können Nutzer ein Masterpasswort setzen, dies ist aber nicht erforderlich.</string>
+      <string id="HandlersOneLine">Handlers (Einzeiliger JSON-Code)</string>
       <string id="Handlers">Handlers</string>
       <string id="Handlers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Anwendungsverhalten (beim Anklicken eines Links oder beim Download) mittels JSON beschreiben.
 
@@ -858,8 +939,9 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#handlers (Englisch)</string>
+      <string id="PreferencesOneLine">Einstellungen (Einzeiliger JSON-Code)</string>
       <string id="Preferences">Einstellungen</string>
-      <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im Abschnitt Einstellungen (veraltet) löschen.
+      <string id="Preferences_Explain">Hinweis: Um diese Richtlinieneinstellungen nutzen zu können, müssen Sie zunächst alle Einstellungen im Abschnitt Einstellungen (Veraltet) löschen.
 
 Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Einstellungen mit Hilfe einer JSON-Datei konfigurieren.
 
@@ -867,16 +949,19 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werde
 
 Für eine Beschreibung der Einstellung, siehe:
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
-      <string id="Bookmarks">Bookmarks (JSON)</string>
-      <string id="Bookmarks_Explain">If this policy is enabled, you can use JSON to configure bookmarks, including [] to clear all bookmarks.
+      <string id="BookmarksOneLine">Lesezeichen (Einzeiliger JSON-Code)</string>
+      <string id="Bookmarks">Lesezeichen (JSON)</string>
+      <string id="Bookmarks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie Lesezeichen mit JSON konfigurieren. Mit [] können Sie alle Lesezeichen löschen.
 
-If this policy is disabled or not configured, the individual bookmark policies are used.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die Richtlinien zu individuellen Lesezeichen verwendet.
 
-If this policy is enabled along with individual bookmarks, those bookmarks will not be added.
+Wenn diese Richtlinieneinstellung zusammen mit der für die individuellen Lesezeichen verwendet wird, werden die individuellen Lesezeichen nicht hinzugefügt.
 
-This policy has no effect on Managed Bookmarks.
+Diese Richtlinieneinstellung wirkt sich nicht auf verwaltete Lesezeichen aus.
 
-For detailed information on the JSON, see https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks.</string>
+Für Informationen über die JSON-Struktur, siehe:
+https://github.com/mozilla/policy-templates/blob/master/README.md#bookmarks (Englisch)</string>
+      <string id="ManagedBookmarksOneLine">Verwaltete Lesezeichen (Einzeiliger JSON-Code)</string>
       <string id="ManagedBookmarks">Verwaltete Lesezeichen</string>
       <string id="ManagedBookmarks_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie verwaltete Lesezeichen mit Hilfe einer JSON-Datei konfigurieren.
 
@@ -892,34 +977,234 @@ Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, könn
       <string id="BackgroundAppUpdate_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, wird die Anwendung keine Updates im Hintergrund installieren, wenn sie geschlossen ist.
 
 Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Updates ohne Genehmigung durch den Anwender im Hintergrund installiert werden, selbst wenn die Anwendung nicht gestartet ist. Das Betriebssystem kann jedoch den Anwender um Genehmigung fragen.</string>
-      <string id="AutoLaunchProtocolsFromOrigins">Auto Launch Protocols From Origins</string>
-      <string id="AutoLaunchProtocolsFromOrigins_Explain">If this policy is enabled, you can define a list of external protocols that can be used from listed origins without prompting the user.
+      <string id="AutoLaunchProtocolsFromOriginsOneLine">Externe Protokolle automatisch ausführen (Einzeiliger JSON-Code)</string>
+      <string id="AutoLaunchProtocolsFromOrigins">Externe Protokolle automatisch ausführen</string>
+      <string id="AutoLaunchProtocolsFromOrigins_Explain">Wenn diese Richtlinieneinstellung aktiviert, können Sie eine Liste von externen Protokollen definieren, die bei bestimmten URLs ohne Nachfrage beim Benutzer automatisch ausgeführt werden.
 
-If this policy is disabled or not configured, any site that invokes an external protocol will ask the user for permission.
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird jede Seite, die ein externes Protokoll ausführt, den Benutzer um Erlaubnis fragen.
 
-For detailed information on creating the policy, see https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins.</string>
+Für eine Beschreibung der Einstellung, siehe:
+https://github.com/mozilla/policy-templates/blob/master/README.md#autolaunchprotocolsfromorigins (Englisch)</string>
       <string id="WindowsSSO">Windows SSO</string>
       <string id="WindowsSSO_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, verwendet Firefox in Windows gespeicherte Zugangsdaten, um Sie auf Webseiten von Microsoft anzumelden, einschließlich Outlook, Office 365 sowie allen anderen Geschäfts- oder Schulkonten, die Microsofts Authentifizierung verwenden.
 
 Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, müssen die Zugangsdaten manuell eingegeben werden.</string>
+      <string id="UseSystemPrintDialog">Druckdialog des Betriebssystems verwenden</string>
+      <string id="UseSystemPrintDialog_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, verwendet Firefox den Druckdialog des Betriebssystems, anstatt vorher eine Druckvorschau anzuzeigen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, zeigt Firefox vor dem Drucken eine Druckvorschau an.</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarningsOneLine">Deaktivieren von Warnungen auf der Grundlage von Dateierweiterungen für bestimmte Dateitypen in Domänen (Einzeiliger JSON-Code)</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings">Deaktivieren von Warnungen auf der Grundlage von Dateierweiterungen für bestimmte Dateitypen in Domänen</string>
+      <string id="ExemptDomainFileTypePairsFromFileTypeDownloadWarnings_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste von Domänen und Dateierweiterungen definieren, die von Warnungen ausgenommen sind.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden Warnungen für alle ausführbaren Dateitypen angezeigt.
+
+Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://github.com/mozilla/policy-templates/blob/master/README.md#exemptdomainfiletypepairsfromfiletypedownloadwarnings.</string>
+      <string id="StartDownloadsInTempDirectory">Downloads im temporären Verzeichnis starten</string>
+      <string id="StartDownloadsInTempDirectory_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, startet Firefox Downloads in einem temporären Verzeichnis und löscht sie automatisch, wenn der Browser geschlossen wird.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, startet Firefox Downloads im Download-Ordner und sie werden nicht automatisch gelöscht, wenn der Browser geschlossen wird.</string>
+      <string id="GoToIntranetSiteForSingleWordEntryInAddressBar">Erzwingen einer direkten Intranet-Seitennavigation bei der Eingabe einzelner Wörter in der Adresszeile</string>
+      <string id="GoToIntranetSiteForSingleWordEntryInAddressBar_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird bei der Eingabe von einzelnen Wörtern in die Adressleiste versucht, zuerst zu Intranetsites zu navigieren, und erst auf die Suche zurückgegriffen, wenn die DNS-Anfrage fehlschlägt.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird bei der Eingabe von einzelnen Wörtern in die Adressleiste eine Suche durchgeführt.</string>
+      <string id="AppUpdatePin">Aktualisierungen auf eine bestimmte Version begrenzen</string>
+      <string id="AppUpdatePin_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Firefox-Version als xx. oder xx.xx. angeben und Firefox wird nicht über diese Haupt- oder Nebenversion hinaus aktualisiert.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Firefox normal aktualisiert.</string>
+      <string id="Proxy_Locked">Keine Änderung der Proxy-Einstellungen zulassen</string>
+      <string id="Proxy_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Proxy-Einstellungen vom Benutzer nicht geändert werden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer seine Proxy-Einstellungen ändern.</string>
+      <string id="Proxy_ConnectionType">Verbindungstyp</string>
+      <string id="Proxy_ConnectionType_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den Verbindungstyp festlegen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox standardmäßig den Systemproxy.</string>
+      <string id="Proxy_HTTPProxy">HTTP Proxy</string>
+      <string id="Proxy_HTTPProxy_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den HTTP-Proxy festlegen, der verwendet wird, wenn eine manuelle Proxy-Konfiguration angegeben ist.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox keinen HTTP-Proxy.</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols">HTTP-Proxy für HTTPS verwenden</string>
+      <string id="Proxy_UseHTTPProxyForAllProtocols_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird der HTTP-Proxy für HTTPS verwendet, wenn eine manuelle Proxy-Konfiguration angegeben ist.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox keinen HTTPS-Proxy, es sei denn, er ist angegeben.</string>
+      <string id="Proxy_SSLProxy">HTTPS Proxy</string>
+      <string id="Proxy_SSLProxy_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den HTTPS-Proxy festlegen, der verwendet wird, wenn eine manuelle Proxy-Konfiguration angegeben ist.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox keinen HTTPS-Proxy.</string>
+      <string id="Proxy_SOCKSProxy">SOCKS Host</string>
+      <string id="Proxy_SOCKSProxy_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den SOCKS-Host und die Version festlegen, die verwendet werden, wenn eine manuelle Proxy-Konfiguration angegeben wird.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox keinen SOCKS-Host.</string>
+      <string id="Proxy_AutoConfigURL">URL für automatische Proxy-Konfiguration</string>
+      <string id="Proxy_AutoConfigURL_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die URL für die automatische Proxy-Konfiguration festlegen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox keine URL für die automatische Proxy-Konfiguration.</string>
+      <string id="Proxy_Passthrough">Proxy Passthrough</string>
+      <string id="Proxy_Passthrough_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die Proxy-Einstellungen für die angegebenen Standorte umgangen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, umgeht Firefox den Proxy nicht.</string>
+      <string id="Proxy_AutoLogin">Keine Aufforderung zur Authentifizierung, wenn das Passwort gespeichert ist</string>
+      <string id="Proxy_AutoLogin_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox nicht zur Proxy-Authentifizierung auffordern, wenn ein Kennwort gespeichert wird.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Firefox immer zur Proxy-Authentifizierung auffordern.</string>
+      <string id="Proxy_UseProxyForDNS">Proxy DNS bei Verwendung von SOCKS</string>
+      <string id="Proxy_UseProxyForDNS_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird bei Verwendung eines SOCKS-Proxies die DNS-Anfragen vom Proxy-Server aufgelöst.
+
+Wenn diese Richtlinieneinstellung deaktiviert ist, wird DNS bei der Verwendung von SOCKS nicht über einen Proxy geleitet.
+
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, wird DNS bei der Verwendung von SOCKS v4 nicht über einen Proxy geleitet, bei SOCKS v5 wird die DNS-Anfrage vom Proxy-Server aufgelöst</string>
+
+      <string id="DisableThirdPartyModuleBlocking">Blockierung von Drittanbietermodulen deaktivieren</string>
+      <string id="DisableThirdPartyModuleBlocking_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, dürfen Benutzer keine Module von Drittanbietern auf der Seite about:third-party blockieren.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, dürfen Benutzer Module von Drittanbietern auf der Seite about:third-party blockieren.</string>
+      <string id="ContainersOneLine">Container (Einzeiliger JSON-Code)</string>
+      <string id="Containers">Container</string>
+      <string id="Containers_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie JSON verwenden, um die Standardcontainer zu konfigurieren.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden die integrierten Standardwerte verwendet.
+
+Ausführliche Informationen zur Erstellung der Richtlinie finden Sie unter https://github.com/mozilla/policy-templates/blob/master/README.md#containers.</string>
+      <string id="FirefoxSuggest_WebSuggestions">Vorschläge aus dem Internet</string>
+      <string id="FirefoxSuggest_WebSuggestions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, erhalten Sie von Firefox Vorschläge, die mit Ihrer Suche zusammenhängen.
+
+Wenn diese Richtlinieneinstellung deaktiviert ist, erhalten Sie diese Vorschläge nicht.
+
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, erhalten Sie von Firefox Vorschläge für Ihre Suche.</string>
+      <string id="FirefoxSuggest_SponsoredSuggestions">Vorschläge von Sponsorens</string>
+      <string id="FirefoxSuggest_SponsoredSuggestions_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden Sie die Entwicklung von Firefox mit gelegentlichen gesponserten Vorschlägen unterstützen.
+
+Wenn diese Richtlinieneinstellung deaktiviert ist, werden Sie diese Vorschläge nicht erhalten.
+
+Wenn diese Richtlinieneinstellung nicht konfiguriert ist, erhalten Sie gelegentlich gesponserte Vorschläge.</string>
+      <string id="FirefoxSuggest_ImproveSuggest">Verbessern Sie Firefox Suggest</string>
+      <string id="FirefoxSuggest_ImproveSuggest_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, tragen Sie zu einem besseren Sucherlebnis bei, indem Sie Mozilla erlauben, Ihre Suchanfragen zu verarbeiten.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erlauben Sie Mozilla nicht, Ihre Suchanfragen zu verarbeiten.</string>
+      <string id="FirefoxSuggest_Locked">Keine Änderung der Firefox Suggest-Einstellungen zulassen</string>
+      <string id="FirefoxSuggest_Locked_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können die Firefox Suggest-Einstellungen nicht vom Benutzer geändert werden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, kann der Benutzer seine Firefox Suggest-Einstellungen ändern..</string>
+      <string id="PrintingEnabled">Drucken</string>
+      <string id="PrintingEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist das Drucken deaktiviert.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist das Drucken aktiviert.</string>
+      <string id="ManualAppUpdateOnly">Nur manuelle Updates</string>
+      <string id="ManualAppUpdateOnly_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, werden die Benutzer nicht aufgefordert, Updates zu installieren, und Firefox sucht nicht im Hintergrund nach Updates. Der Benutzer muss Updates manuell über das Dialogfeld "Info" überprüfen und installieren.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, erhält der Browser Updates.
+
+Diese Richtlinie wird für die meisten Benutzer nicht empfohlen.</string>
+      <string id="AllowFileSelectionDialogs">Dateiauswahldialoge zulassen</string>
+      <string id="AllowFileSelectionDialogs_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, können Benutzer keine Dateiauswahldialoge öffnen. In den meisten Fällen verhält sich Firefox so, als ob der Benutzer auf die Schaltfläche Abbrechen geklickt hätte.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, können Benutzer Dateiauswahldialoge öffnen.</string>
+      <string id="AutofillAddressEnabled">Autovervollständigung für Adressen aktivieren</string>
+      <string id="AutofillAddressEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Adressen für Firefox-Versionen und Regionen, die dies unterstützen, nicht automatisch ausgefüllt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Adressen für Firefox-Versionen und -Regionen, die dies unterstützen, automatisch ausgefüllt.</string>
+      <string id="AutofillCreditCardEnabled">Autovervollständigung für Zahlungsarten aktivieren</string>
+      <string id="AutofillCreditCardEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, werden Zahlungsmethoden für Firefox-Versionen und Regionen, die dies unterstützen, nicht automatisch ausgefüllt.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, werden Zahlungsmethoden für Firefox-Versionen und -Regionen, die dies unterstützen, automatisch ausgefüllt.</string>
+      <string id="TranslateEnabled">Übersetzung von Webseiten aktivieren</string>
+      <string id="TranslateEnabled_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Übersetzung von Webseiten nicht verfügbar.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, ist die Übersetzung von Webseiten verfügbar.
+
+Hinweis: Die Übersetzung von Webseiten erfolgt vollständig auf dem Client, um den Datenschutz zu gewährleisten.</string>
+      <string id="DisableEncryptedClientHello">Encrypted Client Hello (ECH) deaktivieren</string>
+      <string id="DisableEncryptedClientHello_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird die TLS-Funktion Encrypted Client Hello (ECH) deaktiviert.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die TLS-Funktion Encrypted Client Hello (ECH) aktiviert.</string>
+      <string id="PostQuantumKeyAgreementEnabled">Post-quantum Key Agreement aktivieren</string>
+      <string id="PostQuantumKeyAgreementEnabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Post-Quantum Key Agreement für TLS aktiviert.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird Post-Quantum Key Agreement für TLS deaktiviert.</string>
+      <string id="HttpsOnlyMode">Nur-HTTPS Modus</string>
+      <string id="HttpsOnlyMode_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das Standardverhalten für den Nur-HTTPS Modus festlegen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, ist der Nur-HTTPS Modus nicht aktiviert.</string>
+      <string id="HttpsOnlyMode_Allowed">Standardmäßig ausgeschaltet</string>
+      <string id="HttpsOnlyMode_Disallowed">Ausgeschaltet und gesperrt</string>
+      <string id="HttpsOnlyMode_Enabled">Standardmäßig eingeschaltet</string>
+      <string id="HttpsOnlyMode_ForceEnabled">Eingeschaltet und gesperrt</string>
+      <string id="HttpAllowlist">HTTP Erlaubnisliste</string>
+      <string id="HttpAllowlist_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine Liste von Verbindungen angeben, die nicht auf HTTPS hochgestuft werden sollen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden alle Verbindungen auf HTTPS hochgestuft, wenn der Nur-HTTPS Modus aktiviert ist.</string>
+      <string id="PrivateBrowsingModeAvailability">Verfügbarkeit des privaten Browsing-Modus</string>
+      <string id="PrivateBrowsingModeAvailability_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Verfügbarkeit des privaten Browsing-Modus festlegen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, ist der private Browsing-Modus verfügbar.</string>
+      <string id="PrivateBrowsingModeAvailability_0">Privaten Browsing-Modus zulassen</string>
+      <string id="PrivateBrowsingModeAvailability_1">Privaten Browsing-Modus deaktivieren</string>
+      <string id="PrivateBrowsingModeAvailability_2">Privaten Browsing-Modus erzwingen</string>
+      <string id="ContentAnalysis_AgentName">Name des DLP-Agenten</string>
+      <string id="ContentAnalysis_AgentName_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den Namen des DLP-Agenten angeben, der in Dialogen und Benachrichtigungen über DLP-Vorgänge verwendet wird.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Agentenname „A DLP Agent“ verwendet.</string>
+      <string id="ContentAnalysis_AgentTimeout">Zeitüberschreitung des DLP-Agenten</string>
+      <string id="ContentAnalysis_AgentTimeout_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die Zeitüberschreitung in Sekunden angeben, nachdem eine DLP-Anfrage an den Agenten gesendet wurde. Nach Ablauf dieser Zeitspanne wird die Anfrage abgelehnt, es sei denn, „Standardergebnis“ ist auf 1 oder 2 eingestellt.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, beträgt die Zeitüberschreitung 30 Sekunden.</string>
+      <string id="ContentAnalysis_AllowUrlRegexList">Url-Regex-Zulassungsliste</string>
+      <string id="ContentAnalysis_AllowUrlRegexList_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine durch Leerzeichen getrennte Liste regulärer Ausdrücke angeben, die URLs angibt, für die DLP-Vorgänge ohne Rücksprache mit dem Agenten immer zugelassen werden. Die Standardeinstellung ist „^about:(?!blank|srcdoc).*“, was bedeutet, dass alle Seiten, die mit „about:“ beginnen, von DLP ausgenommen sind, mit Ausnahme von „about:blank“ und „about:srcdoc“, da diese durch Webinhalte kontrolliert werden können.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird immer der DLP-Agent konsultiert.</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations">DLP auf der selben Registerkarte</string>
+      <string id="ContentAnalysis_BypassForSameTabOperations_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, lässt Firefox automatisch DLP-Anfragen zu, deren Daten von derselben Registerkarte und demselben Frame stammen - zum Beispiel, wenn Daten in die Zwischenablage kopiert und dann auf derselben Seite eingefügt werden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, leitet Firefox DLP-Anfragen, deren Daten von der gleichen Registerkarte und dem gleichen Frame stammen, nicht wie üblich an den DLP-Agenten weiter.</string>
+      <string id="ContentAnalysis_ClientSignature">Signatur der Pipe</string>
+      <string id="ContentAnalysis_ClientSignature_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie die erforderliche Signatur des mit der Pipe verbundenen DLP-Agenten festlegen. Wenn dies eine nicht leere Zeichenkette ist und der DLP-Agent keine Signatur mit einem Betreff-Namen hat, der genau mit diesem Wert übereinstimmt, wird Firefox keine Verbindung zur Pipe herstellen.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird die Signatur nicht überprüft.</string>
+      <string id="ContentAnalysis_DefaultResult">Standardergebnis</string>
+      <string id="ContentAnalysis_DefaultResult_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie das gewünschte Verhalten für DLP-Anfragen angeben, wenn ein Problem bei der Verbindung mit dem DLP-Agenten auftritt.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, werden DLP-Anfragen abgelehnt, wenn ein Problem bei der Verbindung mit dem Agenten auftritt.</string>
+      <string id="ContentAnalysis_DefaultResult_0">Anfrage ablehnen</string>
+      <string id="ContentAnalysis_DefaultResult_1">Warnen Sie den Benutzer und lassen Sie ihm die Wahl, ob er zulassen oder verweigern möchte</string>
+      <string id="ContentAnalysis_DefaultResult_2">Anfrage zulassen</string>
+      <string id="ContentAnalysis_DenyUrlRegexList">Url-Regex-Verweigerungsliste</string>
+      <string id="ContentAnalysis_DenyUrlRegexList_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie eine durch Leerzeichen getrennte Liste mit regulären Ausdrücken angeben, die URLs angibt, für die DLP-Vorgänge immer verweigert werden, ohne den Agenten zu konsultieren.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der DLP-Agent immer konsultiert.</string>
+      <string id="ContentAnalysis_Enabled">DLP aktivieren</string>
+      <string id="ContentAnalysis_Enabled_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, wird Firefox DLP verwenden.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, verwendet Firefox kein DLP.
+
+Hinweis: Wenn diese Richtlinieneinstellung aktiviert ist und kein DLP-Agent ausgeführt wird, werden alle DLP-Anfragen abgelehnt, es sei denn, das Standardergebnis ist auf 1 oder 2 eingestellt.</string>
+      <string id="ContentAnalysis_IsPerUser">Pipe pro Benutzer</string>
+      <string id="ContentAnalysis_IsPerUser_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, erstellt der DLP-Agent die Pipe pro System.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, wird die Pipe vom DLP-Agenten pro Benutzer erstellt.</string>
+      <string id="ContentAnalysis_PipePathName">Name der Pipe</string>
+      <string id="ContentAnalysis_PipePathName_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, können Sie den Namen der Pipe für den DLP-Agenten ändern.
+
+Wenn diese Richtlinieneinstellung deaktiviert oder nicht konfiguriert ist, wird der Standard-Pipe-Name „path_user“ verwendet.</string>
+      <string id="ContentAnalysis_ShowBlockedResult">Benachrichtigung bei Ablehnung einer DLP-Anfrage</string>
+      <string id="ContentAnalysis_ShowBlockedResult_Explain">Wenn diese Richtlinieneinstellung deaktiviert ist, zeigt Firefox keine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.
+
+Wenn diese Richtlinieneinstellung aktiviert oder nicht konfiguriert ist, zeigt Firefox eine Benachrichtigung an, wenn eine DLP-Anfrage abgelehnt wird.</string>
       <string id="Preferences_Boolean_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf true gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, ist die Einstellung auf false gesperrt.
 
 Für eine Beschreibung der Einstellung, siehe:
-
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
       <string id="Preferences_String_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist die Einstellung auf den spezifizierten String-Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.
 
 Für eine Beschreibung der Einstellung, siehe:
-
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
       <string id="Preferences_Enum_Explain">Wenn diese Richtlinieneinstellung aktiviert ist, ist sie auf den spezifizierten Wert gesperrt. Wenn diese Richtlinieneinstellung deaktiviert ist, hat sie keinen Effekt.
 
 Für eine Beschreibung der Einstellung, siehe:
-
 https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (Englisch)</string>
       <string id="Preferences_Unsupported_Explain">Diese Richtlinieneinstellung ist nicht mehr unterstützt. Wir arbeiten an einer Lösung.</string>
-      <string id="Preferences_accessibility_force_disabled_auto">Auto (0)</string>
-      <string id="Preferences_accessibility_force_disabled_off">Always Off (1)</string>
+      <string id="Preferences_accessibility_force_disabled_auto">Automatisch (0)</string>
+      <string id="Preferences_accessibility_force_disabled_off">Immer Aus (1)</string>
       <string id="Preferences_security_default_personal_cert_Ask_Every_Time">Jedes Mal nachfragen</string>
       <string id="Preferences_security_default_personal_cert_Select_Automatically">Automatisch auswählen</string>
       <string id="accessibility_force_disabled">accessibility.force_disabled</string>
@@ -1020,10 +1305,10 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <dropdownList refId="SearchBar"/>
       </presentation>
       <presentation id="TrackingProtection">
-        <checkBox refId="TrackingProtectionLocked">Änderungen am Schutz vor Aktivitäten Verfolgung nicht erlauben</checkBox>
+        <checkBox refId="TrackingProtectionLocked">Änderungen am Schutz vor Aktivitätenverfolgung nicht erlauben</checkBox>
         <checkBox refId="Cryptomining">Cryptomining-Skripte blockieren.</checkBox>
-        <checkBox refId="Fingerprinting">Fingerprinting-Skripte blockieren.</checkBox>
-        <text>Exceptions:</text>
+        <checkBox refId="Fingerprinting">Identifizierer-Skripte (Fingerprinter) blockieren.</checkBox>
+        <text>Ausnahmen:</text>
         <listBox refId="TrackingProtection_Exceptions"/>
       </presentation>
       <presentation id="TrackingProtection_Exceptions">
@@ -1144,10 +1429,13 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
           <label/>
         </textBox>
         <checkBox refId="DNSOverHTTPSEnabled">DNS über HTTPS aktivieren.</checkBox>
-        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS über HTTPS Einstellungen nicht erlauben.</checkBox>
+        <checkBox refId="DNSOverHTTPSLocked">Änderungen an den DNS-über-HTTPS Einstellungen nicht erlauben.</checkBox>
       </presentation>
-      <presentation id="SSLVersion">
-        <dropdownList refId="SSLVersion"/>
+      <presentation id="SSLVersionMin">
+        <dropdownList refId="SSLVersion" defaultItem="2"/>
+      </presentation>
+      <presentation id="SSLVersionMax">
+        <dropdownList refId="SSLVersion" defaultItem="3"/>
       </presentation>
       <presentation id="SupportMenu">
         <text>Title:</text>
@@ -1158,7 +1446,7 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
         <textBox refId="SupportMenuURL">
           <label/>
         </textBox>
-        <text>Access key:</text>
+        <text>Taste:</text>
         <textBox refId="SupportMenuAccessKey">
           <label/>
         </textBox>
@@ -1193,10 +1481,10 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       <presentation id="FirefoxHome">
         <checkBox refId="FirefoxHome_Search">Suche</checkBox>
         <checkBox refId="FirefoxHome_TopSites">Top Seiten</checkBox>
-        <checkBox refId="FirefoxHome_SponsoredTopSites">Sponsored Top Sites</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredTopSites">Gesponserte Top-Seiten</checkBox>
         <checkBox refId="FirefoxHome_Highlights">Download Verlauf</checkBox>
         <checkBox refId="FirefoxHome_Pocket">Von Pocket empfohlen</checkBox>
-        <checkBox refId="FirefoxHome_SponsoredPocket">Sponsored Pocket Stories</checkBox>
+        <checkBox refId="FirefoxHome_SponsoredPocket">Gesponserte Pocket Stories</checkBox>
         <checkBox refId="FirefoxHome_Snippets">Snippets</checkBox>
         <checkBox refId="FirefoxHome_Locked">Es ist nicht erlaubt, dass Einstellungen geändert werden.</checkBox>
       </presentation>
@@ -1208,6 +1496,9 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="DisplayMenuBar">
         <dropdownList refId="DisplayMenuBar"/>
+      </presentation>
+      <presentation id="DisplayBookmarksToolbar">
+        <dropdownList refId="DisplayBookmarksToolbar"/>
       </presentation>
       <presentation id="String">
         <textBox refId="String">
@@ -1222,6 +1513,57 @@ https://github.com/mozilla/policy-templates/blob/master/README.md#preferences (E
       </presentation>
       <presentation id="JSON">
         <multiTextBox refId="JSON"/>
+      </presentation>
+      <presentation id="JSONOneLine">
+        <textBox refId="JSONOneLine">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_ConnectionType">
+        <dropdownList refId="Proxy_ConnectionType"/>
+      </presentation>
+      <presentation id="Proxy_HTTPProxy">
+        <textBox refId="Proxy_HTTPProxy">
+          <label>Host einschließlich Port:</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_SSLProxy">
+        <textBox refId="Proxy_SSLProxy">
+          <label>Host einschließlich Port:</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_SOCKSProxy">
+        <text>Host einschließlich Port:</text>
+        <textBox refId="Proxy_SOCKSProxy">
+          <label/>
+        </textBox>
+        <text>SOCKS Version:</text>
+        <dropdownList refId="Proxy_SOCKSVersion"/>
+      </presentation>
+      <presentation id="Proxy_AutoConfigURL">
+        <textBox refId="Proxy_AutoConfigURL">
+          <label>URL:</label>
+        </textBox>
+      </presentation>
+      <presentation id="Proxy_Passthrough">
+        <text>Kein Proxy für</text>
+        <textBox refId="Proxy_Passthrough">
+          <label/>
+        </textBox>
+        <text>Example: .mozilla.org, .net.nz, 192.168.1.0/24</text>
+        <text>Connections to localhost, 127.0.0.1/8, and ::1 are never proxied.</text>
+      </presentation>
+      <presentation id="HttpsOnlyMode">
+        <dropdownList refId="HttpsOnlyMode"/>
+      </presentation>
+      <presentation id="PrivateBrowsingModeAvailability">
+        <dropdownList refId="PrivateBrowsingModeAvailability"/>
+      </presentation>
+      <presentation id="ContentAnalysis_DefaultResult">
+        <dropdownList refId="ContentAnalysis_DefaultResult"/>
+      </presentation>
+      <presentation id="Number">
+        <decimalTextBox refId="Number"/>
       </presentation>
     </presentationTable>
   </resources>
